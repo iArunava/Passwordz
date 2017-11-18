@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+* {
+	font-family: Play;
+	font-size: 16px;
+}
+
+.div--center-in-div {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.button--wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#id--the-password {
+	display: block;
+	resize: none;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #FF5722;
+	box-shadow: 0.5px 2.95px 2px 0.01px rgba(255, 87, 34, 0.15); 
+	color: black;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+  	border-radius: 3px;
+	transition: all 0.3s;
+	width: 80%;
+  	height: 60px;
+  	font-size: 20px;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+#id--the-password:focus, #id--the-password:hover {
+	box-shadow: 1.0px 2.95px 4px 0.12px rgba(255, 87, 34, 0.5);
+}
+
+#button--the-passwd-gen {
+	margin-top: 20px;
+	background: inherit;
+	padding: 15px 32px;
+	border: 1px solid #FF5722;
+	text-align: center;
+	-webkit-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	transition: border 0.5s;
+	cursor: pointer;
+}
+
+#button--the-passwd-gen:hover, #button--the-passwd-gen:focus {
+	box-shadow: 1.0px 2.95px 4px 1.12px rgba(255, 87, 34, 0.5);
+}
+
+#id--main-navbar {
+	background-color: #FFCCBC;
+}
+
+#id--the-hr-seperator {
+	margin-top: 20px;
+	width: 85%;
+}
+
+.span--custom-span {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.footer {
+	background-color: #FFCCBC;
+	height: 80px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.text--align-center {
+	text-align: center;
+}
+
+.margin--top-20 {
+	margin-top: 20px;
+}
+
+.font--size-20 {
+	font-size: 20px;
+}
+
+.font--size-25 {
+	font-size: 25px;
+}
+
+.text--letter-spacing-1 {
+	letter-spacing: 1px;
+}
+
+.color--theme {
+	color: #FF5722;
+}
+
+.float--left {
+	float: left;
+}
