@@ -5,6 +5,10 @@
 	font-size: 16px;
 }
 
+input {
+	transition: 0.3s all;
+}
+
 .div--center-in-div {
 	width: 50%;
 	margin: 0 auto;
@@ -68,6 +72,10 @@
 	margin-top: 20px;
 	width: 85%;
 }
+
+/*#id--cust-undline {
+	width: 20%;
+}*/
 
 .span--custom-span {
 	width: 50px;

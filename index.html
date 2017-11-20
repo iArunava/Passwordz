@@ -20,8 +20,30 @@
 </head>
 
 <body>
+
+
+
+<div id="id--info-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="id--info-modal-head" class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="id--info-modal-body"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <nav id="id--main-navbar" class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand font--size-25" href="#"> <span class="color--theme font--size-28">P</span>asswordz<sup class="font--size-18">Beta</sup> </a>
+  <a class="navbar-brand font--size-25" href="#"> <span class="color--theme font--size-28">P</span>asswordz<sup class="font--size-15">Beta</sup> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,7 +51,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#"> About Passwordz <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -52,38 +74,54 @@
 	</div>
 	
 	<hr id="id--the-hr-seperator"/>
+</div>
 
+<div class="container">
 	<div class="row">
     		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<p class="text--align-center font--size-20 text--letter-spacing-1">  <span class="color--theme font--size-25">C</span>ustomizations </p>
-		</div>
-		<div style="display:flex;justify-content:center;align-items:center;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 float--left">
-			<div class="input-group span--custom-span">
-				<span class="input-group-addon">
-					<input type="checkbox" aria-label="Checkbox for following text input">
-	      			</span>
-				<span> Default </span>
+			<!--<hr id="id--cust-undline"/>-->
 			</div>
-			<div class="input-group span--custom-span">
-				<span class="input-group-addon">
-					<input type="checkbox" aria-label="Checkbox for following text input">
-	      			</span>
-				<span> Default </span>
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p class="text--align-center font--size-20"> Length </p>
 			</div>
-			<div class="input-group span--custom-span">
-				<span class="input-group-addon">
-					<input type="checkbox" aria-label="Checkbox for following text input">
-	      			</span>
-				<span> Default </span>
+
+			<div class="col-4">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" id="id--random-length" aria-label="Random" name="length" checked>
+						<label for="id--random-length"> Random </label>
+					</span>
+					<input type="text" id="id--random-length-text" class="form-control" aria-label="Random" disabled>
+				</div>
 			</div>
-		</div>
+			
+			<div class="col-4">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" id="id--fixed-length" aria-label="Random" name="length">
+						<label for="id--fixed-length"> Fixed </label>
+					</span>
+					<input type="text" id="id--fixed-length-text" class="form-control" aria-label="Random" maxlength="2">
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" id="id--range-length" aria-label="Random" name="length">
+						<label for="id--range-length"> Range </label>
+					</span>
+					<input type="text" id="id--range-length-text" class="form-control" aria-label="Random" maxlength="5">
+				</div>
+			</div>
 	</div>
 
 	<footer class="footer">
 	    	<p class="text--align-center"> Made with &#10084; by Arunava </p>
 		<p class="text--align-center"> [@iArunava] </p>
 	</footer>
-
 </div>
 <script src="./lib/js/main.js"></script>
 </body>
