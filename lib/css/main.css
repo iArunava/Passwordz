@@ -60,8 +60,13 @@ input {
 	cursor: pointer;
 }
 
-#button--the-passwd-gen:hover, #button--the-passwd-gen:focus {
+#button--the-passwd-gen:hover {
 	box-shadow: 1.0px 2.95px 4px 1.12px rgba(255, 87, 34, 0.5);
+}
+
+input[type=text]:hover, input[type=number]:hover, input[type=text]:focus, input[type=number]:focus {
+	box-shadow: 1.0px 2.95px 4px 1.12px rgba(255, 87, 34, 0.5);
+	border: 1px solid #FF5722;
 }
 
 #id--main-navbar {
