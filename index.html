@@ -21,9 +21,7 @@
 
 <body>
 
-
-
-<div id="id--info-modal" class="modal" tabindex="-1" role="dialog">
+<div id="id--info-modal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -42,6 +40,25 @@
   </div>
 </div>
 
+<div class="modal fade" id="id--about-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="id--about-modal-title" class="modal-title"> About Passwordz </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="id--about-modal-body"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <nav id="id--main-navbar" class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand font--size-25" href="#"> <span class="color--theme font--size-28">P</span>asswordz<sup class="font--size-15">Beta</sup> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,15 +68,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" id="button--the-copy-btn" href="#"> Copy <span class="sr-only">(current)</span></a>
+        <a class="nav-link" id="button--the-copy-btn" href="#"> Copy </a>
       </li>
-		<li class="nav-item">
-        <a class="nav-link" href="#"> About Passwordz <span class="sr-only">(current)</span></a>
+	<li class="nav-item">
+	        <a class="nav-link" href="#" data-toggle="modal" data-target="#id--about-modal"> About Passwordz </a>
       </li>
     </ul>
   </div>
 </nav>
-
 
 <div class="container-fluid">
 
