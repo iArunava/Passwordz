@@ -90,13 +90,13 @@ input[type=text]:hover, input[type=number]:hover, input[type=text]:focus, input[
 .footer {
 	background-color: #FFCCBC;
 	height: 80px;
-	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	width: 100%;
 	font-size: 20px;
 	letter-spacing: 1px;
+	margin-top: 30px;
 }
 
 .text--align-center {

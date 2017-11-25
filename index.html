@@ -155,7 +155,7 @@
 						<input type="radio" id="id--cus-includeonly" aria-label="Random" name="custom">
 						<label for="id--cus-includeonly"> Include Only </label>
 					</span>
-					<input type="text" id="id--include-only-text" class="form-control" aria-label="Random" maxlength="5">
+					<input type="text" id="id--include-only-text" class="form-control" aria-label="Random">
 				</div>
 				
 				<div class="margin--top-20"></div>
@@ -169,37 +169,47 @@
 							<div id="id--jusinc-div" class="col-7">
 								<div class="input-group">
 									<span class="input-group-addon">
-										<input type="checkbox" aria-label=""> Numbers
+										<input type="checkbox" id="id--all-numbers" aria-label=""> Numbers 0-9
 									</span>
-									<input type="text" class="form-control" aria-label="Text input with checkbox">
+									<!--<input type="text" class="form-control" aria-label="Text input with checkbox">-->
 								</div>
 								
 								<div class="margin--top-10"></div>								
 								
 								<div class="input-group">
 									<span class="input-group-addon">
-										<input type="checkbox" aria-label=""> UpperCase 
+										<input type="checkbox" id="id--all-uppercase" aria-label=""> UpperCase A-Z
 									</span>
-									<input type="text" class="form-control" aria-label="Text input with checkbox">
+									<!--<input type="text" class="form-control" aria-label="Text input with checkbox">-->
 								</div>
 
 								<div class="margin--top-10"></div>								
 								
 								<div class="input-group">
 									<span class="input-group-addon">
-										<input type="checkbox" aria-label=""> LowerCase
+										<input type="checkbox" id="id--all-lowercase" aria-label=""> LowerCase a-z
 									</span>
-									<input type="text" class="form-control" aria-label="Text input with checkbox">
+									<!--<input type="text" class="form-control" aria-label="Text input with checkbox">-->
 								</div>
 
 								<div class="margin--top-10"></div>								
 								
 								<div class="input-group">
 									<span class="input-group-addon">
-										<input type="checkbox" aria-label=""> Symbols
+										<input type="checkbox" id="id--all-symbols" aria-label=""> Symbols
+									</span>
+									<input type="text" id="id--all-symbols-text" class="form-control" aria-label="Text input with checkbox">
+								</div>
+								
+								<div class="margin--top-10"></div>
+
+								<div class="input-group">
+									<span class="input-group-addon">
+										<input type="checkbox" id="id--and-exclude" aria-label=""> and Exclude
 									</span>
 									<input type="text" class="form-control" aria-label="Text input with checkbox">
 								</div>
+
 							</div>
 						</div>
 				</div>
@@ -211,7 +221,7 @@
 						<input type="radio" id="id--cus-incbut" aria-label="Random" name="custom">
 						<label for="id--cus-incbut"> Include all default characters but </label>
 					</span>
-					<input type="text" id="id--include-only-text" class="form-control" aria-label="Random" maxlength="5">
+					<input type="text" id="id--cus-incbut-text" class="form-control" aria-label="Random" maxlength="100">
 				</div>
 
 			</div>
